@@ -167,6 +167,8 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.05;letter-s
   font-size:clamp(17px,1.7vw,26px);line-height:1.18;text-align:right;text-wrap:balance;
 }
 .case__quote small{display:block;font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.06em;margin-top:10px;opacity:.85;line-height:1.4}
+/* Caso 03: citação mais estreita, à direita, para não cobrir os rostos centrais */
+@media(min-width:961px){#caso-03 .case__quote{left:64%;font-size:clamp(16px,1.35vw,21px)}}
 .case__strip{display:grid;gap:8px;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
 .case__strip figure{margin:0;overflow:hidden;border-radius:8px;background:var(--surface);position:relative}
 .case__strip img{width:100%;height:100%;object-fit:cover}
